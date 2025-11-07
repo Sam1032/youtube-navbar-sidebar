@@ -9,11 +9,11 @@ import jack from "../assets/jack.png"
 
 const Navbar = ({setShowSidebar}) => {
   return (
-    <div className='w-full h-20 flex items-center justify-between shadow-2xl px-15' >
+    <div className='w-full h-20 flex items-center justify-between shadow-md px-15'>
       <div className='flex gap-5'>
        {[menu,logo].map((link,i)=>(
         <img key={i} src={link} 
-        className={`h-8 ${i==0? "cursor-pointer" : ""}`}
+        className={`h-6 ${i==0? "cursor-pointer" : ""}`}
         onClick={i==0 ? ()=>setShowSidebar((prev)=>!prev) : undefined}
         />
        ))}
@@ -29,9 +29,9 @@ const Navbar = ({setShowSidebar}) => {
       </div>
       <div className='flex gap-5'>
        { [upload,more,notification].map((link,i)=>(
-        <img src={link} key={i}  className='w-10 h-10' />
+        <img src={link} key={i}  className='w-8 h-8' />
        ))}
-        <img src={jack} className='w-10 h-10 rounded-full' />
+        <img src={jack} className='w-8 h-8 rounded-full' />
       </div>
     </div>
   )
