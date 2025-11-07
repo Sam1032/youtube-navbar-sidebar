@@ -51,7 +51,7 @@ const Sidebar = ({ showSidebar }) => {
         ))}
       </div>
 
-      <hr className="border-gray-700" />
+      <hr className="border-gray-300" />
 
       {!showSidebar && (
           <p className="text-red-500 font-semibold mb-2 px-2">Subscribed</p>

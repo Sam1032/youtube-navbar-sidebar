@@ -1,10 +1,12 @@
 import React from 'react'
 import Sidebar from '../components/sidebar'
+import Feed from '../components/feed'
 
 const Home = ({showSidebar}) => {
   return (
-    <div>
+    <div className='flex' >
       <Sidebar showSidebar={showSidebar} />
+      <Feed />
     </div>
   )
 }
